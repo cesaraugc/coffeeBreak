@@ -1,0 +1,104 @@
+<head>
+	<title>Login - MCB</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+</head>
+
+<style type="text/css">
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: "Kaushan Script", cursive;
+}
+h2 {
+	text-align: center;
+	font-family: 'Kalam', cursive;
+}
+input {
+	margin: 5px;
+	font-family: 'Kalam', cursive;
+	vertical-align: middle;
+	text-align: center;
+}
+label {
+	font-family:  'Kalam', cursive;
+}
+button {
+	font-family: 'Kalam', cursive;
+	margin: 5px;
+}
+p {
+	text-align: center;
+	font-family: 'Kalam', cursive;
+}
+.textoSoltoCentro {
+	text-align: center;
+	font-family: 'Kalam', cursive;
+}
+.textoSoltoEsquerda {
+	text-align: left;
+	font-family: 'Kalam', cursive;
+}
+.textoSoltoDireita {
+	text-align: right;
+	font-family: 'Kalam', cursive;
+}
+.jumbotron {
+	margin-top: 40px;
+	margin-left: -40px;
+	margin-right: -40px;
+	background: rgba(255, 193, 7, 0.9); 
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+footer {
+	overflow: auto;
+}
+</style>
+
+<script type="text/javascript">
+	d = new new Date();
+	y = d.getFullYear();
+
+	document.getElementById("anoRodape").innerHTML = y;
+</script>
+
+<body style="background-image: url('https://i.pinimg.com/originals/34/56/aa/3456aaa5bd271248fef7d1a088196fc8.jpg'); background-size: cover;">
+	<div class="container">
+		<div class="jumbotron">
+			<div class="row vertical-align">
+				<div class="col-md-4">
+					<h1>Login</h1>
+					<form>
+						<input class="form-control" type="text" name="usuario" placeholder="Nome de Usuário">
+						<input class="form-control" type="password" name="senha" placeholder="Senha">
+						<div style="text-align: center;">
+							<input type="checkbox" name="salvarSenha">
+							<label>Mantenha-me conectado</label><br>
+						</div>
+						<button class="btn btn-primary form-control";">Login</button><br><br>
+						<div class="textoSoltoCentro">Não tem uma conta no My Coffee Break?</div>
+						<button class="btn btn-success form-control">Cadastro</button>
+					</form>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<h1>My Coffee Break</h1>
+					<h2>Para momentos de felicidade grátis.</h2>
+					<br><br>
+					<h2>Registre-se agora e aproveite o mundo das palestras com Coffee Break grátis.</h2>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<span id="anoRodape"></span>
+	</footer>
+</body>
