@@ -36,7 +36,7 @@ def loginView(request):
             return redirect('index')
     else:
         form = UserLoginForm()
-    return render(request, 'CoffeeBreak/login.html', {'form': form})
+    return render(request, 'CoffeeBreak/loginV2.html', {'form': form})
     
 def logoutView(request):
     logout(request)

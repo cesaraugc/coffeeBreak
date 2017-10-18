@@ -10,7 +10,7 @@
     <body>
 	 <div class="page-header">
     {% if user.is_authenticated %}
-        <a href="{% url 'logoutView' %}" class="top-menu"><span class="glyphicon glyphicon-log-out"></span></a>
+        <a href="{% url 'logoutView' %}" class="top-menu"><span class="glyphicon glyphicon-log-out"></span></a>       
     {% else %}
 		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 		<a href="{% url 'loginView' %}" class="top-menu"><span class="glyphicon glyphicon-log-in"></span></a>

@@ -14,10 +14,10 @@ class UserForm(forms.ModelForm):
         fields = ('username','first_name','last_name', 'email', 'password')
         labels = {
             'username': ('Nome de Usuário'),
-            'password': ('Senha'),
             'email': ('Email'),
             'first_name': ('Nome'),
             'last_name': ('Sobrenome'),
+            'password': ('Senha'),
         }
         help_texts = {
             'username': (''),
@@ -34,7 +34,7 @@ class UserLoginForm(forms.Form):
         if(username and password):
             user = authenticate(username=username, password=password)
             if not user:
-                raise forms.ValidationError("Usuário inexistete")
+                raise forms.ValidationError("Usuário inexistente")
             if not user.check_password(password):
                 raise forms.ValidationError("Senha incorreta")
         else:
