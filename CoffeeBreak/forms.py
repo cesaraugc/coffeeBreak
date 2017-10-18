@@ -8,7 +8,7 @@ from django.contrib.auth import (
 User = get_user_model()
 
 class UserForm(forms.ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput)
+    password = forms.CharField(widget=forms.PasswordInput, label='Senha')
     class Meta:
         model = User
         fields = ('username','first_name','last_name', 'email', 'password')
@@ -25,8 +25,8 @@ class UserForm(forms.ModelForm):
         
         
 class UserLoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    username = forms.CharField(label='Nome de Usuário')
+    password = forms.CharField(widget=forms.PasswordInput, label='Senha')
     
     def clean(self, *args, **kwargs):
         username=self.cleaned_data.get("username")
