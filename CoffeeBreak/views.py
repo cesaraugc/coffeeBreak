@@ -12,7 +12,17 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):#isso aqui tá bem errado, é pra mudar
-    return render(request, 'CoffeeBreak/base.html')
+    if request.method == "POST":
+        form = UserLoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get("username")
+            password = form.cleaned_data.get("password")
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('index')
+    else:
+        form = UserLoginForm()
+    return render(request, 'CoffeeBreak/loginV2.html', {'form': form})
 
 def post_new(request):
     if request.method == "POST":
