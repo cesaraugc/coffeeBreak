@@ -1,7 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .forms import UsuarioForm
+from django.contrib.auth import (
+    login,
+    logout,
+    authenticate,
+    get_user_model,
+    )
+from .forms import UserForm, UserLoginForm
 from django.shortcuts import redirect
+from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):#isso aqui tá bem errado, é pra mudar
@@ -9,10 +16,28 @@ def index(request):#isso aqui tá bem errado, é pra mudar
 
 def post_new(request):
     if request.method == "POST":
-        form = UsuarioForm(request.POST)
+        form = UserForm(request.POST)
         if form.is_valid():
-            post = form.save()
+            novo_usuario = User.objects.create_user(**form.cleaned_data)
+            #login(new_user)
             return redirect('index')
     else:
-        form = UsuarioForm()
+        form = UserForm()
     return render(request, 'CoffeeBreak/new_user.html', {'form': form})
+
+def loginView(request):
+    if request.method == "POST":
+        form = UserLoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get("username")
+            password = form.cleaned_data.get("password")
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('index')
+    else:
+        form = UserLoginForm()
+    return render(request, 'CoffeeBreak/login.html', {'form': form})
+    
+def logoutView(request):
+    logout(request)
+    return redirect('index')
