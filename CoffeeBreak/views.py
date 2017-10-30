@@ -43,11 +43,11 @@ def loginView(request):
             password = form.cleaned_data.get("password")
             user = authenticate(username=username, password=password)
             login(request, user)
-            return redirect('index')
+            return redirect('index')#return redirect('mapaView')
     else:
         form = UserLoginForm()
     return render(request, 'CoffeeBreak/loginV2.html', {'form': form})
-    
+
 def logoutView(request):
     logout(request)
     return redirect('index')
