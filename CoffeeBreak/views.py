@@ -18,7 +18,9 @@ def index(request):#isso aqui tá bem errado, é pra mudar
             username = form.cleaned_data.get("username")
             password = form.cleaned_data.get("password")
             user = authenticate(username=username, password=password)
-            login(request, user)
+            if user is not None:
+                login(request, user)
+                return redirect('postLoginView')
             return redirect('index')
     else:
         form = UserLoginForm()
@@ -42,12 +44,16 @@ def loginView(request):
             username = form.cleaned_data.get("username")
             password = form.cleaned_data.get("password")
             user = authenticate(username=username, password=password)
-            login(request, user)
-            return redirect('index')
+            if user is not None:
+                login(request, user)
     else:
         form = UserLoginForm()
-    return render(request, 'CoffeeBreak/loginV2.html', {'form': form})
+    #return render(request, 'CoffeeBreak/loginV2.html', {'form': form})
+    
     
 def logoutView(request):
     logout(request)
     return redirect('index')
+
+def postLoginView(request):
+    return render(request,'CoffeeBreak/teste.html')
