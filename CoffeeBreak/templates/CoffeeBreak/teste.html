@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,11 +21,33 @@
   </head>
   <body>
     <div id="map"></div>
+    <script src="{% static 'js/modernizr-custom.js' %}">
+
+
+    var localizacao = {latitude:4, longitude:4};
+
+    if (Modernizr.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(posicao){
+            $("#demanda_form").append("<input type='hidden' name='codigo_longitude' id='codigo_longitude' value="+ posicao.coords.longitude +">");
+            $("#demanda_form").append("<input type='hidden' name='codigo_latitude' id='codigo_latitude' value="+ posicao.coords.latitude +">");
+            $("#id_longitude").val(posicao.coords.longitude);
+            $("#id_latitude").val(posicao.coords.latitude);
+            localizacao.latitude = posicao.coords.latitude;
+            localizacao.longitude = posicao.coords.longitude;
+
+
+       });
+
+     }
+
+    </script>
+
     <script>
+      
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
+          center: {lat: localizacao.latitude, lng: localizacao.longitude},
           zoom: 8
         });
       }
