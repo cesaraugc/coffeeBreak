@@ -20,39 +20,33 @@
     </style>
   </head>
   <body>
+    <input type='hidden'  id='id_longitude' >
+    <input type='hidden'  id='id_latitude' >
     <div id="map"></div>
-    <script src="{% static 'js/modernizr-custom.js' %}">
 
-
-    var localizacao = {latitude:4, longitude:4};
-
-    if (Modernizr.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(posicao){
-            $("#demanda_form").append("<input type='hidden' name='codigo_longitude' id='codigo_longitude' value="+ posicao.coords.longitude +">");
-            $("#demanda_form").append("<input type='hidden' name='codigo_latitude' id='codigo_latitude' value="+ posicao.coords.latitude +">");
-            $("#id_longitude").val(posicao.coords.longitude);
-            $("#id_latitude").val(posicao.coords.latitude);
-            localizacao.latitude = posicao.coords.latitude;
-            localizacao.longitude = posicao.coords.longitude;
-
-
-       });
-
-     }
-
-    </script>
-
-    <script>
-      
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: localizacao.latitude, lng: localizacao.longitude},
-          zoom: 8
-        });
-      }
-    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6WfnQ2JrM5BXuTlv7x7k6fFIDPSFumXU&callback=initMap"
     async defer></script>
+    <script src="{% static 'js/modernizr-custom.js' %}"> </script>
+
+    <script>
+
+      var map;
+      var lg = 0;
+      var lt = 0;
+      function initMap() {
+        if (Modernizr.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(posicao){
+            lg = posicao.coords.longitude;
+            lt = posicao.coords.latitude;
+
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: lt, lng: lg},
+              zoom: 18
+            });
+          });
+        }
+      }
+    </script>
+
   </body>
 </html>
