@@ -31,7 +31,6 @@ def post_new(request):
         form = UserForm(request.POST)
         if form.is_valid():
             novo_usuario = User.objects.create_user(**form.cleaned_data)
-            #login(new_user)
             return redirect('index')
     else:
         form = UserForm()
@@ -56,4 +55,4 @@ def logoutView(request):
     return redirect('index')
 
 def postLoginView(request):
-    return render(request,'CoffeeBreak/teste.html')
+    return render(request,'CoffeeBreak/dashboard.html')
