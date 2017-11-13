@@ -35,7 +35,7 @@ def post_new(request):
             return redirect('index')
     else:
         form = UserForm()
-    return render(request, 'CoffeeBreak/new_user.html', {'form': form})
+    return render(request, 'CoffeeBreak/cadastro.html', {'form': form})
 
 def loginView(request):
     if request.method == "POST":
