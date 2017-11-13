@@ -49,8 +49,8 @@ def loginView(request):
     else:
         form = UserLoginForm()
     #return render(request, 'CoffeeBreak/loginV2.html', {'form': form})
-    
-    
+
+
 def logoutView(request):
     logout(request)
     return redirect('index')
