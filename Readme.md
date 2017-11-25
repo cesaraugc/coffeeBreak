@@ -15,10 +15,19 @@
 ## Sobre a arquitetura do projeto ##
   * Framework escolhido: Django
   * SGBD escolhido: PostgreSQL
-  
+
   A escolha do framework Python Django foi feita por causa da familiaridade da maior parte dos membros do grupo com a linguagem de programação Python
   diminuindo, assim, o tempo necessário para o aprendizado.
   Já a escolha do SGBD PostgreSQL foi feita por ser uma ferramenta open source, de fácil utilização, configuração e conexão com a linguagem Python.
+
+## MVP ##
+ Minimal Viable Product
+
+  * O usuário deve poder se cadastrar no sistema - ok!
+  * O usuário deve conseguir se logar no sistema - ok!
+  * O usuario deve poder visualizar os coffee breaks cadastrados - ok!
+  * O usuario deve poder cadastrar coffee breaks - devel
+
 
 ## Data de entrega ##
 
