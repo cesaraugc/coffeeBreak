@@ -8,6 +8,11 @@
   O projeto que estamos realizando foi proposto por outro grupo consiste na construção de um sistema de localização
    e cadastro de Coffee Breaks.
 
+## Stakeholders ##
+  Existe apenas um tipo de stakeholder denominado Usuário do sistema.
+  Este usuário pode entrar no sistema para cadastrar um Coffee Break com o objetivo de alimentar o sistema e ajudar outros usuários.
+  Ele também pode entrar no sistema para procurar um Coffee Break na sua região.
+
 ## O objetivo ##
   Armazenar e disponibilizar localizações em que Coffee Breaks estão acontecendo para que os usuários possam
   se alimentar de forma gratuita, se deslocando o mínimo possível.
@@ -28,7 +33,7 @@
   * Cadastrar uma palestra com Coffee Break usando endereço para poder ser encontrado; (MVP)
   * Cadastrar uma palestra com Coffee Break usando localização para poder ser encontrado;
   * Como sistema que após o termino de qualquer coffee break o evento desapareça para que os usuários não corram risco de irem em uma coffee break que já acabou;
-  * Cancelar um coffee break como organizador para remover o coffee break do sistema; (MVP)
+  * Cancelar um coffee break para remover o coffee break do sistema; (MVP)
   * Ver coffee breaks que eu cadastrei que irão acontecer para poder gerenciar os coffee breaks;
   * Ver no mapa a posição do coffee break para ter uma noção da localização;
   * Ver no street view o local do coffee break para ter uma noção da localização;
