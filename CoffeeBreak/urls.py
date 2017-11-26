@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^logout/$', views.logoutView, name= 'logoutView'),
     url(r'^home/$', views.postLoginView, name= 'postLoginView'),
     url(r'^novoCB/$', views.CBNewView, name = 'CBNewView'),
+    url(r'^map/$', views.mapaView, name = 'mapaView'),
 
 ]

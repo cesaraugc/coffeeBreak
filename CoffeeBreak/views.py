@@ -67,3 +67,6 @@ def logoutView(request):
 
 def postLoginView(request):
     return render(request,'CoffeeBreak/dashboard.html')
+
+def mapaView(request):
+    return render(request, 'CoffeeBreak/mapaView.html')
