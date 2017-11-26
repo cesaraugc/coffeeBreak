@@ -43,6 +43,33 @@
   * O usuario deve poder visualizar os coffee breaks cadastrados - ok!
   * O usuario deve poder cadastrar coffee breaks - ok!
 
+## Cenários ##
+  Fluxo normal (1)
+    * O usuário entra no site e deseja se cadastrar.
+    * O usuário clica no botão "Cadastro", preenche os dados corretamente e e clica em "Cadastrar".
+    * O usuário está de volta à tela inicial e agora pode se logar com o usuário criado.
+
+  Fluxo normal (2)
+    * O usuário já possui cadastro e irá fazer login.
+    * O usuário preenche seus dados corretamente e clica em "Login".
+    * O usuário está no dashboard de coffee breaks.
+
+  Fluxo normal (3)
+    * O usuário está no dashboard e deseja cadastrar um novo coffee break.
+    * O usuário clica no botão "+".
+    * O usuário está na tela de cadastro de coffee breaks.
+    * O usuário preenche corretamente os dados do coffee breaks e clica em "Tudo certo".
+    * O usuário está de volta ao dashboard e o novo coffee break está lá.
+
+  Fluxo que causa execessões (1)
+    * O usuário está na tela inicial e deseja fazer login, mas não possui cadastro.
+    * O usuário insere dados que não estão cadastrados no sistema.
+    * o sistema avisa ao usuário que o usuário está incorreto.
+
+  Fluxo que causa excessões (2)
+    * O usuário está logado e no dashboard e deseja criar um novo coffee break.
+    * O usuário digita a data no formato incorreto.
+    * O usuário permanece na tela de cadastro de coffe break e o sistema avisa que o formato está incorreto.
 
 ## Data de entrega ##
 
