@@ -27,7 +27,7 @@
   * O usuário deve poder se cadastrar no sistema - ok!
   * O usuário deve conseguir se logar no sistema - ok!
   * O usuario deve poder visualizar os coffee breaks cadastrados - ok!
-  * O usuario deve poder cadastrar coffee breaks - devel
+  * O usuario deve poder cadastrar coffee breaks - ok!
 
 
 ## Data de entrega ##
