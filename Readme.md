@@ -15,6 +15,7 @@
 ## Sobre a arquitetura do projeto ##
   * Framework escolhido: Django
   * SGBD escolhido: PostgreSQL
+  * Heroku: https://coffebreak.herokuapp.com/CoffeeBreak/
 
   A escolha do framework Python Django foi feita por causa da familiaridade da maior parte dos membros do grupo com a linguagem de programação Python
   diminuindo, assim, o tempo necessário para o aprendizado.
