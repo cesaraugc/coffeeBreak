@@ -26,26 +26,26 @@
       </ul>
     </div>
   </nav>
-
+{% for CB in data %}
   <div class="row">
     <div class="col s12 m5">
       <div class="card darken-1" style="background-color: #198E7C">
         <div class="card-content white-text">
-          <span class="card-title">Coffee Break 1</span>
-          <p><i class="material-icons" style="vertical-align: bottom; margin-bottom: 3px">date_range</i> 01/01/2018</p>
-          <p><i class="material-icons" style="vertical-align: bottom; margin-bottom: 3px">access_time</i> 00:00</p>
-          <p><i class="material-icons" style="vertical-align: bottom; margin-bottom: 3px">location_on</i> Onde Judas perdeu as botas...</p>
-          <p><i class="material-icons" style="vertical-align: bottom; margin-bottom: 3px">assignment</i> Descrição do evento do coffee break...</p>
-          <p><i class="material-icons" style="vertical-align: bottom;">info</i> Informações adicionais...</p>
+          <span class="card-title">{{CB.nome}}</span>
+          <p><i class="material-icons" style="vertical-align: bottom; margin-bottom: 3px">date_range</i> {{CB.inicio}}</p>
+          <!-- <p><i class="material-icons" style="vertical-align: bottom; margin-bottom: 3px">access_time</i> 00:00</p> -->
+          <p><i class="material-icons" style="vertical-align: bottom; margin-bottom: 3px">location_on</i> {{CB.endereco}}</p>
+          <p><i class="material-icons" style="vertical-align: bottom; margin-bottom: 3px">assignment</i> {{CB.descricao}}</p>
+          <!-- <p><i class="material-icons" style="vertical-align: bottom;">info</i> Informações adicionais...</p> -->
         </div>
         <div class="card-action">
-          <a class="waves-effect waves-light btn">Ver Mapa</a>
-          <a class="waves-effect waves-light btn">Cancelar Inscrição</a>
+          <a class="waves-effect waves-light btn" href="..\map">Ver Mapa</a>
+          <!-- <a class="waves-effect waves-light btn">Cancelar Inscrição</a> -->
         </div>
       </div>
     </div>
-
-    <div class="col s12 m5">
+{% endfor %}
+    <!-- <div class="col s12 m5">
       <div class="card darken-1" style="background-color: #198E7C">
         <div class="card-content white-text">
           <span class="card-title">Coffee Break 2</span>
@@ -57,10 +57,10 @@
         </div>
         <div class="card-action">
           <a class="waves-effect waves-light btn">Ver Mapa</a>
-          <a class="waves-effect waves-light btn">Cancelar Inscrição</a>
-        </div>
+          <!-- <a class="waves-effect waves-light btn">Cancelar Inscrição</a> -->
+        <!-- </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="row"></div>

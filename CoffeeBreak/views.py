@@ -9,6 +9,7 @@ from django.contrib.auth import (
 from .forms import UserForm, UserLoginForm, CBForm
 from django.shortcuts import redirect
 from django.contrib.auth.models import User
+from . import models
 
 # Create your views here.
 def index(request):#isso aqui tá bem errado, é pra mudar
@@ -66,7 +67,8 @@ def logoutView(request):
     return redirect('index')
 
 def postLoginView(request):
-    return render(request,'CoffeeBreak/dashboard.html')
+    data = models.Coffeebreak.objects.all()
+    return render(request,'CoffeeBreak/dashboard.html', {'data':data})
 
 def mapaView(request):
     return render(request, 'CoffeeBreak/mapaView.html')
