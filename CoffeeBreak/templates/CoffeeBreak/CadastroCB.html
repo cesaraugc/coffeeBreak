@@ -58,7 +58,7 @@ p {
 	margin-top: 40px;
 	margin-left: -40px;
 	margin-right: -40px;
-	background: rgba(255, 193, 7, 0.9); 
+	background: rgba(255, 193, 7, 0.9);
 }
 .vertical-align {
     display: flex;
@@ -138,13 +138,16 @@ footer {
     							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2X3myn2_OqdCOuOs1PPYe-Lc-KaQt6CU&callback=initMap">
     						</script>
 
-              				<div class="col-md-6">	
-              					<input class="form-control" type="text" name="nomePalestra" placeholder="Título da palestra">
+              				<div class="col-md-6">
+												{% csrf_token %}
+												{{ form.as_p }}
+												<!-- <input class="form-control" type="text" name="nomePalestra" placeholder="Título da palestra">
               					<input class="form-control" type="text" name="enderecoPalestra" placeholder="Endereço">
               					<input class="form-control" type="date" name="dataPalestra" placeholder="Data">
-              					<input class="form-control" type="time" name="horario" placeholder="Horário">
+              					<input class="form-control" type="time" name="horario" placeholder="Horário"> -->
               				</div>
 						</div>
+						<button  type="submit" class="btn btn-primary form-control">Pronto!</button>
 					</form>
 				</div>
 			</div>

@@ -6,7 +6,7 @@ from django.contrib.auth import (
     authenticate,
     get_user_model,
     )
-from .forms import UserForm, UserLoginForm
+from .forms import UserForm, UserLoginForm, CBForm
 from django.shortcuts import redirect
 from django.contrib.auth.models import User
 
@@ -35,6 +35,17 @@ def post_new(request):
     else:
         form = UserForm()
     return render(request, 'CoffeeBreak/cadastro.html', {'form': form})
+
+def CBNewView(request):
+    if request.method == "POST":
+        form = CBForm(request.POST)
+        if form.is_valid():
+            novoCB = form.save(commit=False)
+            novoCB.save()
+            return redirect('postLoginView')
+    else:
+        form = CBForm()
+    return render(request, 'CoffeeBreak/CadastroCB.html',{'form':form})
 
 def loginView(request):
     if request.method == "POST":

@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
+from . import models
 from django.contrib.auth import (
     authenticate,
     get_user_model,
@@ -22,12 +23,12 @@ class UserForm(forms.ModelForm):
         help_texts = {
             'username': (''),
         }
-        
-        
+
+
 class UserLoginForm(forms.Form):
     username = forms.CharField(label='Nome de Usuário')
     password = forms.CharField(widget=forms.PasswordInput, label='Senha')
-    
+
     def clean(self, *args, **kwargs):
         username=self.cleaned_data.get("username")
         password = self.cleaned_data.get("password")
@@ -40,3 +41,23 @@ class UserLoginForm(forms.Form):
         else:
             raise forms.ValidationError("Todos os campos são obrigatórios")
         return super(UserLoginForm, self).clean(*args, **kwargs)
+
+class CBForm(forms.ModelForm):
+    class Meta:
+        model = models.Coffeebreak
+        fields = ('nome',
+                'descricao',
+                'endereco',
+                'latitude',
+                'longitude',
+                'inicio',
+                'fim')
+        lables = {
+            'nome':('Nome do CoffeeBreak'),
+            'descricao':('Descrição'),
+            'endereco':('Endereço'),
+            'latitude':('latitude'),
+            'longitude':('Longitude'),
+            'inicio':('Data e horário de início'),
+            'fim':('Data e horário de término'),
+        }
