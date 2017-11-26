@@ -26,15 +26,15 @@
   diminuindo, assim, o tempo necessário para o aprendizado.
   Já a escolha do SGBD PostgreSQL foi feita por ser uma ferramenta open source, de fácil utilização, configuração e conexão com a linguagem Python.
 
-## Histórias de usuário ##
-  * Me cadastrar no sistema para me autenticar no sistema; (MVP)
-  * Me autenticar no sistema para cadastrar e/ou encontrar um coffee break; (MVP)
+## Histórias de usuário / Storyboards ##
+  * Me cadastrar no sistema para me autenticar no sistema; Storyboard: coffeeBreak/LoFis/login.jpg e coffeeBreak/LoFis/cadastro.jpg (MVP)
+  * Me autenticar no sistema para cadastrar e/ou encontrar um coffee break; Storyboard: coffeeBreak/LoFis/login.jpg e coffeeBreak/LoFis/dashboard.jpg (MVP)
   * Encontrar palestras com coffee break num raio determinado pelo usuário para ter acesso a elas; 
-  * Cadastrar uma palestra com Coffee Break usando endereço para poder ser encontrado; (MVP)
-  * Cadastrar uma palestra com Coffee Break usando localização para poder ser encontrado;
+  * Cadastrar uma palestra com Coffee Break usando endereço para poder ser encontrado; coffeeBreak/LoFis/login.jpg , coffeeBreak/LoFis/dashboard.jpg e coffeeBreak/LoFis/novoCB.jpg (MVP)
+  * Cadastrar uma palestra com Coffee Break usando localização para poder ser encontrado; coffeeBreak/LoFis/login.jpg , coffeeBreak/LoFis/dashboard.jpg e coffeeBreak/LoFis/novoCB.jpg
   * Como sistema que após o termino de qualquer coffee break o evento desapareça para que os usuários não corram risco de irem em uma coffee break que já acabou;
-  * Cancelar um coffee break para remover o coffee break do sistema; (MVP)
-  * Ver coffee breaks que eu cadastrei que irão acontecer para poder gerenciar os coffee breaks;
+  * Ver coffee breaks que eu cadastrei que irão acontecer para poder gerenciar os coffee breaks; Storyboard: coffeeBreak/LoFis/login.jpg , coffeeBreak/LoFis/dashboard.jpg e coffeeBreak/LoFis/seusCB.jpg
+  * Cancelar um coffee break para remover o coffee break do sistema; Storyboard: coffeeBreak/LoFis/login.jpg , coffeeBreak/LoFis/dashboard.jpg e coffeeBreak/LoFis/seusCB.jpg (MVP)
   * Ver no mapa a posição do coffee break para ter uma noção da localização;
   * Ver no street view o local do coffee break para ter uma noção da localização;
   * Avaliar o coffee break para que os outros usuários saibam a qualidade do coffee break;
