@@ -75,6 +75,9 @@
   * O usuário está logado e no dashboard e deseja criar um novo coffee break.
   * O usuário digita a data no formato incorreto.
   * O usuário permanece na tela de cadastro de coffe break e o sistema avisa que o formato está incorreto.
+  
+## Testes unitários ##
+ Foram realizados testes unitários nas classes referentes a cada entidade do banco de dados para verificar a autenticidade dos dados inseridos.
 
 ## Relatório de experiência no uso das técnicas ##
 Práticas de Negócio usadas (1)
