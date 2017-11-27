@@ -1,8 +1,5 @@
 ## Trabalho Engenharia de Software ##
-  Este trabalho proposto da matéria de Engenharia de Software.
-   Consiste no desenvolvimento de um SAS (Software as a Service) utilizando
-   plataformas como Heroku (https://www.heroku.com) e frameworks web como por exemplo django (https://www.djangoproject.com) e
-   ruby on rails (https://rubyonrails.org)
+  Este trabalho proposto da matéria de Engenharia de Software consiste no desenvolvimento de um SAS (Software as a Service) utilizando plataformas como Heroku (https://www.heroku.com) e frameworks web como por exemplo django (https://www.djangoproject.com) e ruby on rails (https://rubyonrails.org)
 
 ## Sobre o projeto proposto ##
   O projeto que estamos realizando foi proposto por outro grupo consiste na construção de um sistema de localização
@@ -75,9 +72,6 @@
   * O usuário está logado e no dashboard e deseja criar um novo coffee break.
   * O usuário digita a data no formato incorreto.
   * O usuário permanece na tela de cadastro de coffe break e o sistema avisa que o formato está incorreto.
-  
-## Testes unitários ##
- Foram realizados testes unitários nas classes referentes a cada entidade do banco de dados para verificar a autenticidade dos dados inseridos.
 
 ## Relatório de experiência no uso das técnicas ##
 Práticas de Negócio usadas (1)
@@ -96,10 +90,11 @@ Práticas de Desenvolvimento usadas (2)
   Optou-se por desenvolver as histórias de usuários mais simples e que seriam MVP para conseguir entregar o protótipo do sistema a tempo e funcionando.
 
 ## Lições aprendidas ##
-  Planejar o horizonte de tempo e marcar as iterações são fundamentais para o bom andamento do trabalho. (1)
-  A divisão de tarefas de acordo com a facilidade, habilidade e experiência de cada membro da equipe ajuda a ter eficiência no resultado. (2)
-  Ter o cliente no time é muito importante se quiser usar o paradigma ágil de desenvolvimento. (3)
-
+  * Planejar o horizonte de tempo e marcar as iterações são fundamentais para o bom andamento do trabalho.
+  * A divisão de tarefas de acordo com a facilidade, habilidade e experiência de cada membro da equipe ajuda a ter eficiência no resultado.
+  * Ter o cliente no time é muito importante se quiser usar o paradigma ágil de desenvolvimento.
+  * O uso da técnica de Programação em Par (Desenvolvimento Ágil) surtiu efeitos diretamente positivos à finalização do projeto, bem como ao aprendizado de todos os participantes da equipe de desenvolvimento.
+  * Implementar um framework ainda não trabalhado pela maioria dos membros da equipe se mostrou um desafio que agregou conhecimento a todos da equipe, sendo por meio do aprendizado ou por meio do apoio dado aos que estavam aprendendo.
 
 ## Data de entrega ##
 
