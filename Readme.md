@@ -77,29 +77,25 @@
   * O usuário permanece na tela de cadastro de coffe break e o sistema avisa que o formato está incorreto.
 
 ## Relatório de experiência no uso das técnicas ##
-  Práticas de Negócio usadas (1)
+Práticas de Negócio usadas (1)
+  * Cliente no time
+  * Metáforas
+  * “Semana de 40 horas”
 
-    * Cliente no time
-    * Metáforas
-    * “Semana de 40 horas”
-
-  Práticas de Desenvolvimento usadas (2)
-
-    * Projeto simples
-    * Refatoração
-    * Programação em pares
-    * Padrões de codificação
-    * Integração contínua
+Práticas de Desenvolvimento usadas (2)
+  * Projeto simples
+  * Refatoração
+  * Programação em pares
+  * Padrões de codificação
+  * Integração contínua
 
 ## Decisões de projeto ##
-
   Optou-se por desenvolver as histórias de usuários mais simples e que seriam MVP para conseguir entregar o protótipo do sistema a tempo e funcionando.
 
 ## Lições aprendidas ##
-
-    Planejar o horizonte de tempo e marcar as iterações são fundamentais para o bom andamento do trabalho. (1)
-    A divisão de tarefas de acordo com a facilidade, habilidade e experiência de cada membro da equipe ajuda a ter eficiência no resultado. (2)
-    Ter o cliente no time é muito importante se quiser usar o paradigma ágil de desenvolvimento. (3)
+  Planejar o horizonte de tempo e marcar as iterações são fundamentais para o bom andamento do trabalho. (1)
+  A divisão de tarefas de acordo com a facilidade, habilidade e experiência de cada membro da equipe ajuda a ter eficiência no resultado. (2)
+  Ter o cliente no time é muito importante se quiser usar o paradigma ágil de desenvolvimento. (3)
 
 
 ## Data de entrega ##
