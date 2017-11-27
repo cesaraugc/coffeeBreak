@@ -77,13 +77,13 @@
   * O usuário permanece na tela de cadastro de coffe break e o sistema avisa que o formato está incorreto.
 
 ## Relatório de experiência no uso das técnicas ##
-  Práticas de Negócio usadas: (1)
+  Práticas de Negócio usadas (1)
 
     * Cliente no time
     * Metáforas
     * “Semana de 40 horas”
 
-  Práticas de Desenvolvimento usadas: (2)
+  Práticas de Desenvolvimento usadas (2)
 
     * Projeto simples
     * Refatoração
