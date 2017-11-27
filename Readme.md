@@ -34,9 +34,77 @@
   * Cancelar um coffee break para remover o coffee break do sistema; Storyboard: coffeeBreak/LoFis/login.jpg , coffeeBreak/LoFis/dashboard.jpg e coffeeBreak/LoFis/seusCB.jpg (MVP)
   * Ver no mapa a posição do coffee break para ter uma noção da localização;
   * Ver no street view o local do coffee break para ter uma noção da localização;
-  * Avaliar o coffee break para que os outros usuários sa
+  * Avaliar o coffee break para que os outros usuários saibam a qualidade do coffee break;
+  * Comentar um coffee break para que as outras pessoas vejam.
+
+## MVP ##
+ Minimal Viable Product
+
+  * O usuário deve poder se cadastrar no sistema - ok!
+  * O usuário deve conseguir se logar no sistema - ok!
+  * O usuario deve poder visualizar os coffee breaks cadastrados - ok!
+  * O usuario deve poder cadastrar coffee breaks - ok!
 
 ## Planejamento das iterações e resultados ##
   O desenvolvimento iterativo é aquele que, de pouco em pouco, vai refinando o projeto até estar por completo. 
   Planejamos a iteração criando histórias de usuário e metas com pontuações de menores (para os mais simples) e maiores (para os mais complexos). O objetivo desse tipo de desenvolvimento foi de nos organizarmos e entregarmos o trabalho final no prazo estimado.
   Como resultado desta metodologia sentimos que começamos a trabalhar neste projeto mais cedo que o habitual, tendo tempo de nos reunir com os clientes afim de conversar, adquirir Lo-Fis e histórias de usuários personalizados por eles, deste modo, descobrir que tipo de projeto eles mais gostariam de receber. 
+
+
+## Cenários ##
+ Fluxo normal (1)
+  * O usuário entra no site e deseja se cadastrar.
+  * O usuário clica no botão "Cadastro", preenche os dados corretamente e e clica em "Cadastrar".
+  * O usuário está de volta à tela inicial e agora pode se logar com o usuário criado.
+
+ Fluxo normal (2)
+  * O usuário já possui cadastro e irá fazer login.
+  * O usuário preenche seus dados corretamente e clica em "Login".
+  * O usuário está no dashboard de coffee breaks.
+
+ Fluxo normal (3)
+  * O usuário está no dashboard e deseja cadastrar um novo coffee break.
+  * O usuário clica no botão "+".
+  * O usuário está na tela de cadastro de coffee breaks.
+  * O usuário preenche corretamente os dados do coffee breaks e clica em "Tudo certo".
+  * O usuário está de volta ao dashboard e o novo coffee break está lá.
+
+ Fluxo que causa execessões (1)
+  * O usuário está na tela inicial e deseja fazer login, mas não possui cadastro.
+  * O usuário insere dados que não estão cadastrados no sistema.
+  * o sistema avisa ao usuário que o usuário está incorreto.
+
+ Fluxo que causa excessões (2)
+  * O usuário está logado e no dashboard e deseja criar um novo coffee break.
+  * O usuário digita a data no formato incorreto.
+  * O usuário permanece na tela de cadastro de coffe break e o sistema avisa que o formato está incorreto.
+  
+## Testes unitários ##
+ Foram realizados testes unitários nas classes referentes a cada entidade do banco de dados para verificar a autenticidade dos dados inseridos.
+
+## Relatório de experiência no uso das técnicas ##
+Práticas de Negócio usadas (1)
+  * Cliente no time
+  * Metáforas
+  * “Semana de 40 horas”
+
+Práticas de Desenvolvimento usadas (2)
+  * Projeto simples
+  * Refatoração
+  * Programação em pares
+  * Padrões de codificação
+  * Integração contínua
+
+## Decisões de projeto ##
+  Optou-se por desenvolver as histórias de usuários mais simples e que seriam MVP para conseguir entregar o protótipo do sistema a tempo e funcionando.
+
+## Lições aprendidas ##
+  * Planejar o horizonte de tempo e marcar as iterações são fundamentais para o bom andamento do trabalho.
+  * A divisão de tarefas de acordo com a facilidade, habilidade e experiência de cada membro da equipe ajuda a ter eficiência no resultado.
+  * Ter o cliente no time é muito importante se quiser usar o paradigma ágil de desenvolvimento.
+  * O uso da técnica de Programação em Par (Desenvolvimento Ágil) surtiu efeitos diretamente positivos à finalização do projeto, bem como ao aprendizado de todos os participantes da equipe de desenvolvimento.
+  * Implementar um framework ainda não trabalhado pela maioria dos membros da equipe se mostrou um desafio que agregou conhecimento a todos da equipe, sendo por meio do aprendizado ou por meio do apoio dado aos que estavam aprendendo.
+
+## Data de entrega ##
+
+  **26/11/2017**
