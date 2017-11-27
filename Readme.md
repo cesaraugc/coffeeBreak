@@ -1,4 +1,4 @@
-## Trabalho Engenharia de Software ##
+## Trabalho Engenharia de Software - Grupo 4##
   Este trabalho proposto da matéria de Engenharia de Software consiste no desenvolvimento de um SAS (Software as a Service) utilizando plataformas como Heroku (https://www.heroku.com) e frameworks web como por exemplo django (https://www.djangoproject.com) e ruby on rails (https://rubyonrails.org)
 
 ## Sobre o projeto proposto ##
@@ -72,6 +72,9 @@
   * O usuário está logado e no dashboard e deseja criar um novo coffee break.
   * O usuário digita a data no formato incorreto.
   * O usuário permanece na tela de cadastro de coffe break e o sistema avisa que o formato está incorreto.
+  
+## Testes unitários ##
+ Foram realizados testes unitários nas classes referentes a cada entidade do banco de dados para verificar a autenticidade dos dados inseridos.
 
 ## Relatório de experiência no uso das técnicas ##
 Práticas de Negócio usadas (1)
