@@ -1,4 +1,4 @@
-## Trabalho Engenharia de Software - Grupo 4##
+## Trabalho Engenharia de Software - Grupo 4 ##
   Este trabalho proposto da matéria de Engenharia de Software consiste no desenvolvimento de um SAS (Software as a Service) utilizando plataformas como Heroku (https://www.heroku.com) e frameworks web como por exemplo django (https://www.djangoproject.com) e ruby on rails (https://rubyonrails.org)
 
 ## Sobre o projeto proposto ##
